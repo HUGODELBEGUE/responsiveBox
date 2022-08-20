@@ -21,21 +21,23 @@ let b = document.getElementById('box')
 // Récupère la largeur et hauteur de la box
 let widthBox = b.offsetWidth;
 let heigthBox = b.offsetHeight;
-let widthContainer = container.offsetWidth;
-let heigthContainer = container.offsetHeight;
+let widthContainer = window.innerWidth;
+let heigthContainer = window.innerHeight;
 
-// doresize = () => {
-//     let scale;
-//     scale = Math.min(
-//         widthContainer / widthBox,
-//         heigthContainer/ heigthBox
+// window.addEventListener('resize', () => {
+//     let scale = Math.min(
+//         widthContainer / heigthContainer,
+//         widthBox / heigthBox
 //     );
 //     b.style.transform = "scale(" + scale + ")";
-// window.onresize = doresize;
+// })
 
 
 
 
-console.log(scale)
+
 console.log(widthBox)
 console.log(heigthBox)
+console.log(widthContainer)
+console.log(heigthContainer)
+console.log(window.innerWidth)

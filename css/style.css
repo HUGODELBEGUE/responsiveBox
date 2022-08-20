@@ -6,6 +6,10 @@
 
 body {
     background-color: #dfbdd1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -20,11 +24,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 40%;
 }
 
 #box {
-    aspect-ratio: 16 / 9;
+    /*aspect-ratio: 1 / 1;*/
     width: 100%;
     height: auto;
     background-color: beige;
